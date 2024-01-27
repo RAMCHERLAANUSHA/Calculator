@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+    <script src="cal.js" defer></script>
+    
+</head>
+<body>
+    <div class="caluculator">
+        <input id= "inputbox" type="text" placeholder="0">
+        <div>
+            <button class="operator" onclick="clr()" type="button">AC</button>
+            <button class="operator" onclick="del()" type="button">DEL</button>
+            <button class="operator" onclick="calculate('%')" type="button">%</button>
+            <button class="operator" onclick="calculate('/')" type="button">/</button>
+        </div>
+        <div>
+            <button onclick="calculate(7)" type="button" >7</button>
+            <button onclick="calculate(8)" type="button">8</button>
+            <button onclick="calculate(9)" type="button">9</button>
+            <button onclick="calculate('*')" class="operator" type="button">*</button>
+        </div>
+        <div>
+            <button onclick="calculate(4)" type="button">4</button>
+            <button onclick="calculate(5)" type="button">5</button>
+            <button onclick="calculate(6)" type="button">6</button>
+            <button onclick="calculate('-')" class="operator" type="button">-</button>
+        </div>
+        <div>
+            <button onclick="calculate(1)" type="button">1</button>
+            <button onclick="calculate(2)" type="button">2</button>
+            <button onclick="calculate(3)" type="button">3</button>
+            <button onclick="calculate('+')" class="operator" type="button">+</button>
+        </div>
+        <div>
+            <button onclick="calculate('00')" class="operator" type="button">00</button>
+            <button onclick="calculate(0)" type="button">0</button>
+            <button onclick="calculate('.')" class="operator" type="button">.</button>
+            <button onclick="Result()" class="eqlbtn" type="button">=</button>
+        </div>
+    </div>
+</body>
+</html>
